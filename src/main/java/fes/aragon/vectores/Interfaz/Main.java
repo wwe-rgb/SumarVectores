@@ -6,11 +6,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.util.Objects;
+
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/fes/aragon/vectores/bienvenida.fxml"));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fes/aragon/vectores/bienvenida.fxml")));
         primaryStage.setTitle("Bienvenida");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
