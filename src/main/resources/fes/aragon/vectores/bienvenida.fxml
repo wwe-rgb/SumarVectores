@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.vectores.Interfaz.BienvenidaController">
+   <children>
+      <Button layoutX="398.0" layoutY="324.0" onAction="#iniciarCalculadora" prefHeight="51.0" prefWidth="150.0" text="Sumar">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="202.0" layoutY="14.0" prefHeight="54.0" prefWidth="213.0" text="Vectorcalc solutions">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="241.0" layoutY="68.0" text="Integrantes: ">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="126.0" text="Alamilla Cordova Angel Gabriel">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="363.0" layoutY="126.0" text="Martinez Bautista Carlos Alberto">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="350.0" layoutY="190.0" text="Angeles Mermejo Octavio Emiliano">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="192.0" text="Munguia Serrano Luis Antonio">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="366.0" layoutY="251.0" prefHeight="19.0" prefWidth="239.0" text="¿Quieres hacer una suma de vectores?:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="399.0" layoutY="277.0" prefHeight="30.0" prefWidth="172.0" text="Da click en sumar">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="Imagen1" fitHeight="110.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@VectorSoluciones.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Image2" fitHeight="103.0" fitWidth="110.0" layoutX="487.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FESA.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="aprenderVec" layoutX="60.0" layoutY="327.0" mnemonicParsing="false" onAction="#aprenderVectores" prefHeight="45.0" prefWidth="124.0" text="Aprender">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="213.0" prefHeight="45.0" prefWidth="239.0" text="¿Quieres aprender como se">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="283.0" prefHeight="30.0" prefWidth="187.0" text="Da click en aprender">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="246.0" prefHeight="30.0" prefWidth="204.0" text=" realiza una suma de vectores?">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

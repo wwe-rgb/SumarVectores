@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="566.0" prefWidth="964.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.vectores.AprenderVec">
+   <children>
+      <Label layoutX="249.0" layoutY="7.0" text=" Suma de Vectores">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+
+      <TextArea fx:id="miTextArea" layoutX="-9.0" layoutY="45.0" prefHeight="491.0" prefWidth="701.0" scrollLeft="1.0" scrollTop="1.0" text="Para sumar vectores con magnitud, dirección y ángulo, vamos a usar un método llamado &quot;componentes rectangulares&quot;. Es como descomponer el vector en partes más pequeñas que son más fáciles de manejar. Imagina que estás construyendo algo con bloques de LEGO - vamos a desarmar los vectores y luego volverlos a armar.&#10;&#10;Aquí están los pasos:&#10;&#10;1. Descomponer cada vector en sus componentes x y y:&#10;   - Componente x = Magnitud × cos(ángulo)&#10;   - Componente y = Magnitud × sen(ángulo)&#10;&#10;2. Sumar todas las componentes x.&#10;3. Sumar todas las componentes y.&#10;4. Calcular la magnitud del vector resultante usando el teorema de Pitágoras.&#10;5. Calcular el ángulo del vector resultante usando la función tangente inversa.&#10;Un ejemplo sería para que se entienda mejor:&#10;Vector A: Magnitud 5, ángulo 30°&#10;Vector B: Magnitud 3, ángulo 60°&#10;&#10;Paso 1: Descomponer los vectores&#10;&#10;Para el Vector A:&#10;- Componente x = 5 × cos(30°) = 5 × 0.866 = 4.33&#10;- Componente y = 5 × sen(30°) = 5 × 0.5 = 2.5&#10;&#10;Para el Vector B:&#10;- Componente x = 3 × cos(60°) = 3 × 0.5 = 1.5&#10;- Componente y = 3 × sen(60°) = 3 × 0.866 = 2.6&#10;&#10;Paso 2: Sumar las componentes x&#10;4.33 + 1.5 = 5.83&#10;&#10;Paso 3: Sumar las componentes y&#10;2.5 + 2.6 = 5.1&#10;&#10;Paso 4: Calcular la magnitud del vector resultante&#10;Magnitud = √(x² + y²) = √(5.83² + 5.1²) = √(33.99 + 26.01) = √60 ≈ 7.75&#10;&#10;Paso 5: Calcular el ángulo del vector resultante&#10;Ángulo = tan⁻¹(y/x) = tan⁻¹(5.1/5.83) ≈ 41.2°&#10;&#10;Por lo tanto, el vector resultante tiene una magnitud de &#10;aproximadamente 7.75 y un ángulo de 41.2°." wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>
