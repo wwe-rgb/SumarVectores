@@ -24,8 +24,8 @@ public class BienvenidaController {
 
     public void iniciarCalculadora(ActionEvent event) {
         try {
-            //FXMLLoader loader = new FXMLLoader(getClass().getResource("/fes/aragon/vectores/calculadora.fxml"));
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fes/aragon/vectores/calculadora.fxml"));
+            //FXMLLoader loader = new FXMLLoader(getClass().getResource("/fes/aragon/vectores/calculadoraController.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fes/aragon/vectores/calculadoraController.fxml"));
 
             Parent root = loader.load();
 

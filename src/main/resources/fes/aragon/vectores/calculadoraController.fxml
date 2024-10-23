@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx/fxml/1" fx:controller="fes.aragon.vectores.Interfaz.CalculadoraController">
+    <children>
+        <Label layoutX="7.0" layoutY="14.0" text="Ingrese la magnitud del primer vector" />
+        <TextField fx:id="entradaMagnitud1" layoutX="39.0" layoutY="46.0" />
+        <Label layoutX="14.0" layoutY="128.0" text="Ingrese la magnitud del segundo vector" />
+        <Label layoutX="343.0" layoutY="14.0" text="Ingrese la direccion del primer vector (en grados)" />
+        <TextField fx:id="entradaDireccion1" layoutX="408.0" layoutY="46.0" />
+        <TextField fx:id="entradaMagnitud2" layoutX="39.0" layoutY="159.0" />
+        <Label layoutX="312.0" layoutY="127.0" text="Ingrese la direccion del segundo vector (en grados)">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="entradaDireccion2" layoutX="398.0" layoutY="159.0" />
+        <Label layoutX="22.0" layoutY="265.0" text="Magnitud del vector resultante">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="366.0" layoutY="265.0" text="Direccion del vector resultante">
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="salidaMagnitud" layoutX="29.0" layoutY="301.0" prefHeight="37.0" prefWidth="170.0" />
+        <TextArea fx:id="salidaDireccion" layoutX="388.0" layoutY="300.0" prefHeight="37.0" prefWidth="170.0" />
+        <Button fx:id="btnCalcular" layoutX="271.0" layoutY="200.0" mnemonicParsing="false" onAction="#calcular" text="Calcular" />
+        <ImageView fitHeight="100.0" fitWidth="99.0" layoutX="235.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@VectorSoluciones.jpeg" />
+            </image>
+        </ImageView>
+        <!-- Aquí agregamos el Canvas para dibujar los vectores -->
+        <Canvas fx:id="canvas" layoutX="100.0" layoutY="350.0" width="400" height="200" />
+    </children>
+</Pane>
